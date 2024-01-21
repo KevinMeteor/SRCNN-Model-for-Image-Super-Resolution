@@ -1,0 +1,54 @@
+202305   < initially learned about the SRCNN and VDSR model >
+20240118 < reviewed the SRCNN model >
+20240122 < next research: SRGAN model >
+
+
+***
+1. Tutorial From: 
+https://debuggercafe.com/srcnn-implementation-in-pytorch-for-image-super-resolution/
+
+2. Paper:
+Dong, C., Loy, C. C., He, K., & Tang, X. (2015). Image super-resolution using deep 
+	convolutional networks. IEEE transactions on pattern analysis and machine 
+	intelligence, 38(2), 295-307. 
+
+
+*** 補充名詞定義 
+https://kknews.cc/zh-tw/photography/jl58jkl.html
+
+1. 解析度 / 分辨率(resolution，解析度通常使用每毫米的線對（line-pairs）數量來描述，單位是lp/mm。所謂「線對」，是指一系列互相交錯的黑白線條。
+	單位長度擁有的線對又稱為「空間頻率」（spatial frequency），線對越多，頻率越高
+2. 清晰度(definition / sharpness，一種主觀判斷，，受諸多因素影響，例如：視力、觀看距離、時間、不同人看)
+3. 銳度(actance，用於衡量像素邊緣品質的物理量。圖像給人的視覺感覺，受諸多因素影響)
+4. 對比度(相鄰像素的強度差值占強度總和的百分比。)
+
+https://blog.csdn.net/COINVK/article/details/129239715?utm_medium=distribute.pc_relevant.none-task-blog-2~default~baidujs_baidulandingword~default-4-129239715-blog-107231539.235^v40^pc_relevant_anti_vip_base&spm=1001.2101.3001.4242.3&utm_relevant_index=7
+
+5. con2d (2D convolution study) by using PyTorch
+
+
+*** Conda Env.:
+
+Can use "torch_118"
+
+
+*** Datasets:
+
+training dataset: T91
+validation dataset: Set5, and Set14
+
+
+*** Model:
+the SRCNN model
+
+
+*** Code characteristics in Tutorial:
+
+1. In the paper, the original SRCNN model does not utilize padding. Therefore, the output is smaller compared to the input image. But in our implementation, we will use padding to ensure that the output image has the same shape as the input image.
+
+2. The original implementation according to the paper uses the SGD optimizer with different learning rates for different layers. Here we use the Adam optimizer with the same learning rate for the entire model for easier implementation.
+
+3. We do not have a different PSNR calculation for the Set5 and Set14 datasets. Instead, we combine the Set5 and Set14 images into a single validation set and calculate the combined validation PSNR here. Although we will carry out final testing using both Set5 and Set14 datasets at the end to draw a comparison with the original results.
+
+4. The authors extracted patches of size 32×32 from the T91 dataset with a stride of 14. This gave them 24,800 image patches. We will employ a similar strategy. But instead of writing manual code, we will use an open-source library. As we will see later on, we will end up with 22227 patches mostly because we do not finely control how the patches are being extracted. Still, this should not cause significant issues.
+
