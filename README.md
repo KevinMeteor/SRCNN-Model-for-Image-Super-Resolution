@@ -98,7 +98,7 @@ and notice the model name that you sets.
 
 ## Results List
 
-### Loss & PSNR
+### Train and Validation Loss & PSNR
 
 1. SRCNN1 Model
 
