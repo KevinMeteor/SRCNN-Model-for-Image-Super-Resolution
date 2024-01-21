@@ -96,17 +96,39 @@ and notice the model name that you sets.
 
 
 ## Results List
-1. SRCNN1
-![SRCNN1 loss]()
 
+### Loss and Test PPSR
+1. SRCNN1 Model
+
+< center class ="half" > <img src="https://github.com/KevinMeteor/SRCNN-Model-for-Image-Super-Resolution/blob/main/outputs/valid_results/SRCNN1_valid_results/loss.png" alt="Editor" width="400"><img src="https://github.com/KevinMeteor/SRCNN-Model-for-Image-Super-Resolution/blob/main/outputs/valid_results/SRCNN1_valid_results/psnr.png" alt="Editor" width="400"></center >
+
+
+| <img src="https://github.com/KevinMeteor/SRCNN-Model-for-Image-Super-Resolution/blob/main/outputs/valid_results/SRCNN1_valid_results/loss.png"  width="400"> | <img src="https://github.com/KevinMeteor/SRCNN-Model-for-Image-Super-Resolution/blob/main/outputs/valid_results/SRCNN1_valid_results/loss.png"  width="400"> |
 
 
 2. SRCNN2
+< center class ="half" >
+	<img src="https://github.com/KevinMeteor/SRCNN-Model-for-Image-Super-Resolution/blob/main/outputs/valid_results/SRCNN2_valid_results/loss.png" alt="Editor" width="400">
+<img src="https://github.com/KevinMeteor/SRCNN-Model-for-Image-Super-Resolution/blob/main/outputs/valid_results/SRCNN2_valid_results/psnr.png" alt="Editor" width="400">
+< \ center >
+
+
+
 
 3. SRCNN3
 
+< center class ="half" > 
+	<img src="https://github.com/KevinMeteor/SRCNN-Model-for-Image-Super-Resolution/blob/main/outputs/valid_results/SRCNN3_valid_results/loss.png" alt="Editor" width="400">
+<img src="https://github.com/KevinMeteor/SRCNN-Model-for-Image-Super-Resolution/blob/main/outputs/valid_results/SRCNN3_valid_results/psnr.png" alt="Editor" width="400">
+</ center >
+
+
 4. SRCNN4
 
+< center class ="half" > 
+	<img src="https://github.com/KevinMeteor/SRCNN-Model-for-Image-Super-Resolution/blob/main/outputs/valid_results/SRCNN4_valid_results/loss.png" alt="Editor" width="400">
+	<img src="https://github.com/KevinMeteor/SRCNN-Model-for-Image-Super-Resolution/blob/main/outputs/valid_results/SRCNN4_valid_results/psnr.png" alt="Editor" width="300">
+</ center >
 
 
 
