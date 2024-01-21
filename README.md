@@ -11,6 +11,13 @@ I add *image_psnr_ssim_mse_func.py, psnr_ssim_mse.py, search_cuda_version.py*, a
 Data are from 3 datasets: Set5, Set14, and T91. Both of Set5 and Set14 are for validation and testing. And T91 is for training.
 
 
+## Installation 
+If your device with CUDA and its version is greater than v11.8, you can consider creating a conda environment for all the dependencies by
+```
+conda env create --file torch_118.yaml --name torch_118
+```
+
+
 ### Prepare Train Dataset
 SRCNN uses patches for training, which are downscaled, upscaled, patchfied from the T91 dataset, to create a number of training data from a few numbers of images.
 Firstly, we will use *patchify_image.py* , in which
@@ -51,8 +58,8 @@ python bicubic.py --path ../input/Set14/original ../input/Set5/original --scale-
 **Now, we have competely prepared all needed data!**
 
 
-
 ## Usage
+
 
 ### Train
 All models are saves in the *srcnn.py* file.
@@ -65,17 +72,33 @@ model = srcnn.SRCNN1().to(device)
 
 Execute the code in *train.py* from the terminal from the src directory to starting:
 ```
-python train.py --epochs 100   --weights ../outputs/model_ckpt.pth
+python train.py --epochs 100   --weights ../outputs/model_SRCNN1_ckpt.pth
 ```
 
 If you have a trained model, you can load the weights to resume training (optional).
 
 
-## Installation 
-If your device with CUDA and its version is greater than v11.8, you can consider creating a conda environment for all the dependencies by
+### Test
+Finally, we can compare the test PSNR on the Set5 and Set14 datasets.
+
+Execute the code in *test.py* from the terminal from the src directory to starting:
 ```
-conda env create --file torch_118.yaml --name torch_118
+python test.py
 ```
+
+Besides, we can also compare the test PSNR, SSIM, and MSE on the Set5 and Set14 datasets.
+
+Execute the code in *psnr_ssim_mse.py* from the terminal from the src directory to starting:
+```
+python psnr_ssim_mse.py
+```
+and notice the model name that you sets.
+
+
+## Results
+
+
+
 
 
 ## My Hardware Specs
