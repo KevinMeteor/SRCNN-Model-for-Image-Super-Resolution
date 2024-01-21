@@ -1,6 +1,6 @@
 # SRCNN-Model-for-Image-Super-Resolution
 This is a deep learning project applying the SRCNN model, proposed in the paper ['Image Super-Resolution Using Deep Convolutional Networks,'](https://arxiv.org/abs/1501.00092) and implemented with the PyTorch library.
-Some code in this repository is from an article: 
+Some code in this repository is from the article: 
 [SRCNN Implementation in PyTorch for Image Super Resolution](https://debuggercafe.com/srcnn-implementation-in-pytorch-for-image-super-resolution/)
 on cafe website.
 
@@ -35,14 +35,40 @@ and the bicubic 2x upsampled low resolution images, as the input.
 Secoundly, we use *bicubic.py*  to prepare the validation dataset, in which
 ```python
 if args['scale_factor'] == '2x':
+    scale_factor = 0.5
+    os.makedirs('../input/test_bicubic_rgb_2x', exist_ok=True)
+    save_path_lr = '../input/test_bicubic_rgb_2x'
+    os.makedirs('../input/test_hr', exist_ok=True)
+    save_path_hr = '../input/test_hr'
 ```
-'2x' is the scaling-factor, defining the bicubic scale for downsampling and upscaling.
+'2x' and 0.5 is the scaling-factor, defining the bicubic scale for downsampling and upscaling.
 
 Execute the code in *bicubic.py* from the terminal from the src directory:
 ```
 python bicubic.py --path ../input/Set14/original ../input/Set5/original --scale-factor 2x
 ```
 
+**Now, we have competely prepared all needed data!**
+
+
+
+## Usage
+
+### Train
+All models are saves in the *srcnn.py* file.
+
+To train the model *SRCNN1* with a zoom factor of 2, for 100 epochs on GPU.
+From **lines 59** in *train.py* to set the model we wanted to be trained:
+```python
+model = srcnn.SRCNN1().to(device)
+```
+
+Execute the code in *train.py* from the terminal from the src directory to starting:
+```
+python train.py --epochs 100   --weights ../outputs/model_ckpt.pth
+```
+
+If you have a trained model, you can load the weights to resume training (optional).
 
 
 ## Installation 
