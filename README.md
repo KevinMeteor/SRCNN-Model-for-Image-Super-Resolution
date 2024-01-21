@@ -1,4 +1,4 @@
-![image](https://github.com/KevinMeteor/SRCNN-Model-for-Image-Super-Resolution/assets/119212711/f89c22d9-b67b-48a1-b717-61356b808d00)# SRCNN-Model-for-Image-Super-Resolution
+# SRCNN-Model-for-Image-Super-Resolution
 This is a deep learning project applying the SRCNN model, proposed in the paper ['Image Super-Resolution Using Deep Convolutional Networks,'](https://arxiv.org/abs/1501.00092) and implemented with the PyTorch library.
 Some code in this repository is from the article: 
 [SRCNN Implementation in PyTorch for Image Super Resolution](https://debuggercafe.com/srcnn-implementation-in-pytorch-for-image-super-resolution/)
