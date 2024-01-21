@@ -136,14 +136,26 @@ and notice the model name that you sets.
 
 
 ### Test Results
+Epoachs = 100.
+
 1. SRCNN1 Model
 
 
-|Original|BICUBIC x2|SRCNN x2 (27.53 dB)|
+|Original (PSNR, SSIM, MSE)|BICUBIC x2 (26.12 dB, 0.90, 159.01)|SRCNN x2 (27.08 dB, 0.92, 127.30)|
 |--|--|--|
 | <img src="https://github.com/KevinMeteor/SRCNN-Model-for-Image-Super-Resolution/blob/main/input/test_hr/butterfly.png"  width="250">| <img src="https://github.com/KevinMeteor/SRCNN-Model-for-Image-Super-Resolution/blob/main/input/test_bicubic_rgb_2x/butterfly.png"  width="250"> | <img src="https://github.com/KevinMeteor/SRCNN-Model-for-Image-Super-Resolution/blob/main/outputs/valid_results/SRCNN1_valid_results/val_sr_100_5.png"  width="250"> |
 
+|Original (PSNR, SSIM, MSE)|BICUBIC x2 (29.39 dB, 0.92, 74.76)|SRCNN x2 (29.10 dB, 0.91, 79.92)|
+|--|--|--|
+| <img src="https://github.com/KevinMeteor/SRCNN-Model-for-Image-Super-Resolution/blob/main/input/test_hr/zebra.png"  width="250">| <img src="https://github.com/KevinMeteor/SRCNN-Model-for-Image-Super-Resolution/blob/main/input/test_bicubic_rgb_2x/zebra.png"  width="250"> | <img src="https://github.com/KevinMeteor/SRCNN-Model-for-Image-Super-Resolution/blob/main/outputs/valid_results/SRCNN1_valid_results/val_sr_100_18.png"  width="250"> |
 
+|Original (PSNR, SSIM, MSE)|BICUBIC x2 (32.40 dB, 0.96, 37.42)|SRCNN x2 (30.90 dB, 0.96, 58.82)|
+|--|--|--|
+| <img src="https://github.com/KevinMeteor/SRCNN-Model-for-Image-Super-Resolution/blob/main/input/test_hr/lenna.png"  width="250">| <img src="https://github.com/KevinMeteor/SRCNN-Model-for-Image-Super-Resolution/blob/main/input/test_bicubic_rgb_2x/lenna.png"  width="250"> | <img src="https://github.com/KevinMeteor/SRCNN-Model-for-Image-Super-Resolution/blob/main/outputs/valid_results/SRCNN1_valid_results/val_sr_100_12.png"  width="250"> |
+
+|Original (PSNR, SSIM, MSE)|BICUBIC x2 (25.58 dB, 0.94, 179.91)|SRCNN x2 (25.22 dB, 0.93, 195.55)|
+|--|--|--|
+| <img src="https://github.com/KevinMeteor/SRCNN-Model-for-Image-Super-Resolution/blob/main/input/test_hr/ppt3.png"  width="250">| <img src="https://github.com/KevinMeteor/SRCNN-Model-for-Image-Super-Resolution/blob/main/input/test_bicubic_rgb_2x/ppt3.png"  width="250"> | <img src="https://github.com/KevinMeteor/SRCNN-Model-for-Image-Super-Resolution/blob/main/outputs/valid_results/SRCNN1_valid_results/val_sr_100_16.png"  width="250"> |
 
 ## My Hardware Specs
 ```
