@@ -61,7 +61,7 @@ python bicubic.py --path ../input/Set14/original ../input/Set5/original --scale-
 ## Usage
 
 
-### Train
+### Train and Validate
 All models are saves in the *srcnn.py* file.
 
 To train the model *SRCNN1* with a zoom factor of 2, for 100 epochs on GPU.
@@ -95,7 +95,17 @@ python psnr_ssim_mse.py
 and notice the model name that you sets.
 
 
-## Results
+## Results List
+1. SRCNN1
+![SRCNN1 loss]()
+
+
+
+2. SRCNN2
+
+3. SRCNN3
+
+4. SRCNN4
 
 
 
