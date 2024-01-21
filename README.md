@@ -1,4 +1,4 @@
-# SRCNN-Model-for-Image-Super-Resolution
+![image](https://github.com/KevinMeteor/SRCNN-Model-for-Image-Super-Resolution/assets/119212711/f89c22d9-b67b-48a1-b717-61356b808d00)# SRCNN-Model-for-Image-Super-Resolution
 This is a deep learning project applying the SRCNN model, proposed in the paper ['Image Super-Resolution Using Deep Convolutional Networks,'](https://arxiv.org/abs/1501.00092) and implemented with the PyTorch library.
 Some code in this repository is from the article: 
 [SRCNN Implementation in PyTorch for Image Super Resolution](https://debuggercafe.com/srcnn-implementation-in-pytorch-for-image-super-resolution/)
@@ -138,8 +138,7 @@ and notice the model name that you sets.
 ### Test Results
 Epoachs = 100.
 
-1. SRCNN1 Model
-
+1. **SRCNN1 Model**
 
 |Original (PSNR, SSIM, MSE)|BICUBIC x2 (26.12 dB, 0.90, 159.01)|SRCNN x2 (27.08 dB, 0.92, 127.30)|
 |--|--|--|
@@ -157,9 +156,68 @@ Epoachs = 100.
 |--|--|--|
 | <img src="https://github.com/KevinMeteor/SRCNN-Model-for-Image-Super-Resolution/blob/main/input/test_hr/ppt3.png"  width="250">| <img src="https://github.com/KevinMeteor/SRCNN-Model-for-Image-Super-Resolution/blob/main/input/test_bicubic_rgb_2x/ppt3.png"  width="250"> | <img src="https://github.com/KevinMeteor/SRCNN-Model-for-Image-Super-Resolution/blob/main/outputs/valid_results/SRCNN1_valid_results/val_sr_100_16.png"  width="250"> |
 
+
+
+2. **SRCNN2 Model**
+
+|Original (PSNR, SSIM, MSE)|BICUBIC x2 (26.12 dB, 0.90, 159.01)|SRCNN x2 (27.47 dB, 0.93, 116.55)|
+|--|--|--|
+| <img src="https://github.com/KevinMeteor/SRCNN-Model-for-Image-Super-Resolution/blob/main/input/test_hr/butterfly.png"  width="250">| <img src="https://github.com/KevinMeteor/SRCNN-Model-for-Image-Super-Resolution/blob/main/input/test_bicubic_rgb_2x/butterfly.png"  width="250"> | <img src="https://github.com/KevinMeteor/SRCNN-Model-for-Image-Super-Resolution/blob/main/outputs/valid_results/SRCNN2_valid_results/val_sr_100_5.png"  width="250"> |
+
+|Original (PSNR, SSIM, MSE)|BICUBIC x2 (29.39 dB, 0.92, 74.76)|SRCNN x2 (29.55 dB, 0.91, 72.11)|
+|--|--|--|
+| <img src="https://github.com/KevinMeteor/SRCNN-Model-for-Image-Super-Resolution/blob/main/input/test_hr/zebra.png"  width="250">| <img src="https://github.com/KevinMeteor/SRCNN-Model-for-Image-Super-Resolution/blob/main/input/test_bicubic_rgb_2x/zebra.png"  width="250"> | <img src="https://github.com/KevinMeteor/SRCNN-Model-for-Image-Super-Resolution/blob/main/outputs/valid_results/SRCNN2_valid_results/val_sr_100_18.png"  width="250"> |
+
+|Original (PSNR, SSIM, MSE)|BICUBIC x2 (32.40 dB, 0.96, 37.42)|SRCNN x2 (31.32 dB, 0.85, 47.99)|
+|--|--|--|
+| <img src="https://github.com/KevinMeteor/SRCNN-Model-for-Image-Super-Resolution/blob/main/input/test_hr/lenna.png"  width="250">| <img src="https://github.com/KevinMeteor/SRCNN-Model-for-Image-Super-Resolution/blob/main/input/test_bicubic_rgb_2x/lenna.png"  width="250"> | <img src="https://github.com/KevinMeteor/SRCNN-Model-for-Image-Super-Resolution/blob/main/outputs/valid_results/SRCNN2_valid_results/val_sr_100_12.png"  width="250"> |
+
+|Original (PSNR, SSIM, MSE)|BICUBIC x2 (25.58 dB, 0.94, 179.91)|SRCNN x2 (25.37 dB, 0.93, 188.75)|
+|--|--|--|
+| <img src="https://github.com/KevinMeteor/SRCNN-Model-for-Image-Super-Resolution/blob/main/input/test_hr/ppt3.png"  width="250">| <img src="https://github.com/KevinMeteor/SRCNN-Model-for-Image-Super-Resolution/blob/main/input/test_bicubic_rgb_2x/ppt3.png"  width="250"> | <img src="https://github.com/KevinMeteor/SRCNN-Model-for-Image-Super-Resolution/blob/main/outputs/valid_results/SRCNN2_valid_results/val_sr_100_16.png"  width="250"> |
+
+
+3. **SRCNN3 Model**
+
+|Original (PSNR, SSIM, MSE)|BICUBIC x2 (26.12 dB, 0.90, 159.01)|SRCNN x2 (27.56 dB, 0.93, 113.84)|
+|--|--|--|
+| <img src="https://github.com/KevinMeteor/SRCNN-Model-for-Image-Super-Resolution/blob/main/input/test_hr/butterfly.png"  width="250">| <img src="https://github.com/KevinMeteor/SRCNN-Model-for-Image-Super-Resolution/blob/main/input/test_bicubic_rgb_2x/butterfly.png"  width="250"> | <img src="https://github.com/KevinMeteor/SRCNN-Model-for-Image-Super-Resolution/blob/main/outputs/valid_results/SRCNN3_valid_results/val_sr_100_5.png"  width="250"> |
+
+|Original (PSNR, SSIM, MSE)|BICUBIC x2 (29.39 dB, 0.92, 74.76)|SRCNN x2 (29.40 dB, 0.91, 74.70)|
+|--|--|--|
+| <img src="https://github.com/KevinMeteor/SRCNN-Model-for-Image-Super-Resolution/blob/main/input/test_hr/zebra.png"  width="250">| <img src="https://github.com/KevinMeteor/SRCNN-Model-for-Image-Super-Resolution/blob/main/input/test_bicubic_rgb_2x/zebra.png"  width="250"> | <img src="https://github.com/KevinMeteor/SRCNN-Model-for-Image-Super-Resolution/blob/main/outputs/valid_results/SRCNN3_valid_results/val_sr_100_18.png"  width="250"> |
+
+|Original (PSNR, SSIM, MSE)|BICUBIC x2 (32.40 dB, 0.96, 37.42)|SRCNN x2 (31.15 dB, 0.85, 49.94)|
+|--|--|--|
+| <img src="https://github.com/KevinMeteor/SRCNN-Model-for-Image-Super-Resolution/blob/main/input/test_hr/lenna.png"  width="250">| <img src="https://github.com/KevinMeteor/SRCNN-Model-for-Image-Super-Resolution/blob/main/input/test_bicubic_rgb_2x/lenna.png"  width="250"> | <img src="https://github.com/KevinMeteor/SRCNN-Model-for-Image-Super-Resolution/blob/main/outputs/valid_results/SRCNN3_valid_results/val_sr_100_12.png"  width="250"> |
+
+|Original (PSNR, SSIM, MSE)|BICUBIC x2 (25.58 dB, 0.94, 179.91)|SRCNN x2 (26.06 dB, 0.93, 161.08)|
+|--|--|--|
+| <img src="https://github.com/KevinMeteor/SRCNN-Model-for-Image-Super-Resolution/blob/main/input/test_hr/ppt3.png"  width="250">| <img src="https://github.com/KevinMeteor/SRCNN-Model-for-Image-Super-Resolution/blob/main/input/test_bicubic_rgb_2x/ppt3.png"  width="250"> | <img src="https://github.com/KevinMeteor/SRCNN-Model-for-Image-Super-Resolution/blob/main/outputs/valid_results/SRCNN3_valid_results/val_sr_100_16.png"  width="250"> |
+
+
+3. **SRCNN4 Model**
+
+|Original (PSNR, SSIM, MSE)|BICUBIC x2 (26.12 dB, 0.90, 159.01)|SRCNN x2 (26.99 dB, 0.92, 130.19)|
+|--|--|--|
+| <img src="https://github.com/KevinMeteor/SRCNN-Model-for-Image-Super-Resolution/blob/main/input/test_hr/butterfly.png"  width="250">| <img src="https://github.com/KevinMeteor/SRCNN-Model-for-Image-Super-Resolution/blob/main/input/test_bicubic_rgb_2x/butterfly.png"  width="250"> | <img src="https://github.com/KevinMeteor/SRCNN-Model-for-Image-Super-Resolution/blob/main/outputs/valid_results/SRCNN4_valid_results/val_sr_100_5.png"  width="250"> |
+
+|Original (PSNR, SSIM, MSE)|BICUBIC x2 (29.39 dB, 0.92, 74.76)|SRCNN x2 (28.90 dB, 0.91, 83.74)|
+|--|--|--|
+| <img src="https://github.com/KevinMeteor/SRCNN-Model-for-Image-Super-Resolution/blob/main/input/test_hr/zebra.png"  width="250">| <img src="https://github.com/KevinMeteor/SRCNN-Model-for-Image-Super-Resolution/blob/main/input/test_bicubic_rgb_2x/zebra.png"  width="250"> | <img src="https://github.com/KevinMeteor/SRCNN-Model-for-Image-Super-Resolution/blob/main/outputs/valid_results/SRCNN4_valid_results/val_sr_100_18.png"  width="250"> |
+
+|Original (PSNR, SSIM, MSE)|BICUBIC x2 (32.40 dB, 0.96, 37.42)|SRCNN x2 (30.77 dB, 0.85, 54.56)|
+|--|--|--|
+| <img src="https://github.com/KevinMeteor/SRCNN-Model-for-Image-Super-Resolution/blob/main/input/test_hr/lenna.png"  width="250">| <img src="https://github.com/KevinMeteor/SRCNN-Model-for-Image-Super-Resolution/blob/main/input/test_bicubic_rgb_2x/lenna.png"  width="250"> | <img src="https://github.com/KevinMeteor/SRCNN-Model-for-Image-Super-Resolution/blob/main/outputs/valid_results/SRCNN4_valid_results/val_sr_100_12.png"  width="250"> |
+
+|Original (PSNR, SSIM, MSE)|BICUBIC x2 (25.58 dB, 0.94, 179.91)|SRCNN x2 (25.21 dB, 0.93, 195.73)|
+|--|--|--|
+| <img src="https://github.com/KevinMeteor/SRCNN-Model-for-Image-Super-Resolution/blob/main/input/test_hr/ppt3.png"  width="250">| <img src="https://github.com/KevinMeteor/SRCNN-Model-for-Image-Super-Resolution/blob/main/input/test_bicubic_rgb_2x/ppt3.png"  width="250"> | <img src="https://github.com/KevinMeteor/SRCNN-Model-for-Image-Super-Resolution/blob/main/outputs/valid_results/SRCNN4_valid_results/val_sr_100_16.png"  width="250"> |
+
+
 ## My Hardware Specs
 ```
 Intel Core i7-12700 CPU 
-NVIDIA GeForce RTX 3080 (32GB)
+NVIDIA GeForce RTX 3080 (12GB)
 32GB DDR4 RAM
 ```
