@@ -137,7 +137,7 @@ and notice the model name that you sets.
 
 
 ### Test Results
-Epoachs = 100.
+Train 4 models for 100 epochs.
 
 1. **SRCNN1 Model**
 
