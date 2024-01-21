@@ -97,19 +97,19 @@ and notice the model name that you sets.
 
 ## Results List
 
-### Loss & Validation and Test PPSR
+### Loss & PPSR
 
 1. SRCNN1 Model
 
 
-|SRCNN1 Loss|SRCNN1 PPSR|
+|Train and Validation Loss|Train and Validation PPSR|
 |--|--|
 | <img src="https://github.com/KevinMeteor/SRCNN-Model-for-Image-Super-Resolution/blob/main/outputs/valid_results/SRCNN1_valid_results/loss.png"  width="450"> | <img src="https://github.com/KevinMeteor/SRCNN-Model-for-Image-Super-Resolution/blob/main/outputs/valid_results/SRCNN1_valid_results/psnr.png"  width="450"> |
 
 
 2. SRCNN2 Model
 
-|SRCNN2 Loss|SRCNN2 PPSR|
+|Train and Validation Loss|Train and Validation PPSR|
 |--|--|
 | <img src="https://github.com/KevinMeteor/SRCNN-Model-for-Image-Super-Resolution/blob/main/outputs/valid_results/SRCNN2_valid_results/loss.png"  width="450"> | <img src="https://github.com/KevinMeteor/SRCNN-Model-for-Image-Super-Resolution/blob/main/outputs/valid_results/SRCNN2_valid_results/psnr.png"  width="450"> |
 
@@ -119,7 +119,7 @@ and notice the model name that you sets.
 
 3. SRCNN3
 
-|SRCNN3 Loss|SRCNN3 PPSR|
+|Train and Validation Loss|Train and Validation PPSR|
 |--|--|
 | <img src="https://github.com/KevinMeteor/SRCNN-Model-for-Image-Super-Resolution/blob/main/outputs/valid_results/SRCNN3_valid_results/loss.png"  width="450"> | <img src="https://github.com/KevinMeteor/SRCNN-Model-for-Image-Super-Resolution/blob/main/outputs/valid_results/SRCNN3_valid_results/psnr.png"  width="450"> |
 
@@ -130,13 +130,18 @@ and notice the model name that you sets.
 
 4. SRCNN4
 
-|SRCNN4 Loss|SRCNN4 PPSR|
+|Train and Validation Loss|Train and Validation PPSR|
 |--|--|
 | <img src="https://github.com/KevinMeteor/SRCNN-Model-for-Image-Super-Resolution/blob/main/outputs/valid_results/SRCNN4_valid_results/loss.png"  width="450"> | <img src="https://github.com/KevinMeteor/SRCNN-Model-for-Image-Super-Resolution/blob/main/outputs/valid_results/SRCNN4_valid_results/psnr.png"  width="450"> |
 
 
+### Test Results
+1. SRCNN1 Model
 
 
+|Original|BICUBIC x2|SRCNN x2 (27.53 dB)|
+|--|--|--|
+| <img src="https://github.com/KevinMeteor/SRCNN-Model-for-Image-Super-Resolution/blob/main/input/test_hr/butterfly.png"  width="250">| <img src="https://github.com/KevinMeteor/SRCNN-Model-for-Image-Super-Resolution/blob/main/input/test_bicubic_rgb_2x/butterfly.png"  width="250"> | <img src="https://github.com/KevinMeteor/SRCNN-Model-for-Image-Super-Resolution/blob/main/outputs/valid_results/SRCNN1_valid_results/val_sr_100_5.png"  width="250"> |
 
 
 
