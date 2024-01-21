@@ -4,7 +4,7 @@ Some code in this repository is from an article:
 [SRCNN Implementation in PyTorch for Image Super Resolution](https://debuggercafe.com/srcnn-implementation-in-pytorch-for-image-super-resolution/)
 on cafe website.
 
-I add image_psnr_ssim_mse_func.py, psnr_ssim_mse.py, search_cuda_version.py, and another 3 model architecture in srcnn.py in src folder.
+I add *image_psnr_ssim_mse_func.py, psnr_ssim_mse.py, search_cuda_version.py*, and another 3 model architecture in *srcnn.py* in [src folder](https://github.com/KevinMeteor/SRCNN-Model-for-Image-Super-Resolution/blob/main/src).
 
 
 
