@@ -98,19 +98,19 @@ and notice the model name that you sets.
 
 ## Results List
 
-### Loss & PPSR
+### Loss & PSNR
 
 1. SRCNN1 Model
 
 
-|Train and Validation Loss|Train and Validation PPSR|
+|Train and Validation Loss|Train and Validation PSNR|
 |--|--|
 | <img src="https://github.com/KevinMeteor/SRCNN-Model-for-Image-Super-Resolution/blob/main/outputs/valid_results/SRCNN1_valid_results/loss.png"  width="450"> | <img src="https://github.com/KevinMeteor/SRCNN-Model-for-Image-Super-Resolution/blob/main/outputs/valid_results/SRCNN1_valid_results/psnr.png"  width="450"> |
 
 
 2. SRCNN2 Model
 
-|Train and Validation Loss|Train and Validation PPSR|
+|Train and Validation Loss|Train and Validation PSNR|
 |--|--|
 | <img src="https://github.com/KevinMeteor/SRCNN-Model-for-Image-Super-Resolution/blob/main/outputs/valid_results/SRCNN2_valid_results/loss.png"  width="450"> | <img src="https://github.com/KevinMeteor/SRCNN-Model-for-Image-Super-Resolution/blob/main/outputs/valid_results/SRCNN2_valid_results/psnr.png"  width="450"> |
 
@@ -120,7 +120,7 @@ and notice the model name that you sets.
 
 3. SRCNN3
 
-|Train and Validation Loss|Train and Validation PPSR|
+|Train and Validation Loss|Train and Validation PSNR|
 |--|--|
 | <img src="https://github.com/KevinMeteor/SRCNN-Model-for-Image-Super-Resolution/blob/main/outputs/valid_results/SRCNN3_valid_results/loss.png"  width="450"> | <img src="https://github.com/KevinMeteor/SRCNN-Model-for-Image-Super-Resolution/blob/main/outputs/valid_results/SRCNN3_valid_results/psnr.png"  width="450"> |
 
@@ -131,7 +131,7 @@ and notice the model name that you sets.
 
 4. SRCNN4
 
-|Train and Validation Loss|Train and Validation PPSR|
+|Train and Validation Loss|Train and Validation PSNR|
 |--|--|
 | <img src="https://github.com/KevinMeteor/SRCNN-Model-for-Image-Super-Resolution/blob/main/outputs/valid_results/SRCNN4_valid_results/loss.png"  width="450"> | <img src="https://github.com/KevinMeteor/SRCNN-Model-for-Image-Super-Resolution/blob/main/outputs/valid_results/SRCNN4_valid_results/psnr.png"  width="450"> |
 
