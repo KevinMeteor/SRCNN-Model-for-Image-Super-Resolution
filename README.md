@@ -12,7 +12,7 @@ Data are from 3 dataset: Set5, Set14, and T91. Both of Set5 and Set14 are for va
 
 
 ### Prepare Train Dataset
-SRCNN uses patches for training, which are downscaled, upscaled, patchfied from the T91 dataset, to create a number training data from a few numbers of images.
+SRCNN uses patches for training, which are downscaled, upscaled, patchfied from the T91 dataset, to create the number(<1.) training data from a few numbers of images.
 Firstly, we will use *patchify_iamge.py* , in which
 ```
 low_res_img = cv2.resize(patch, (int(w*0.5), int(h*0.5)), 
